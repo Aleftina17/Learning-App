@@ -1,0 +1,80 @@
+.card {
+    &-thumb {
+        position: relative;
+        width: 100%;
+        background-color: #2d2d2d;
+        padding: 2rem;
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        transition: box-shadow 200ms ease-in-out;
+        --x: 0rem;
+        --y: 0rem;
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #121212;
+            --circle-radius: 0.1rem;
+            background: radial-gradient(
+                circle at var(--x) var(--y),
+                rgba(255, 255, 255, 0) var(--circle-radius),
+                rgba(36, 179, 179, 0) calc(0% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.013) calc(4.5% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.049) calc(8.6% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.104) calc(12.5% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.175) calc(16.1% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.259) calc(19.6% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.352) calc(22.9% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.45) calc(26.2% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.55) calc(29.4% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.648) calc(32.7% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.741) calc(35.9% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.825) calc(39.4% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.896) calc(43.1% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.951) calc(46.9% + var(--circle-radius)),
+                rgba(18, 18, 18, 0.987) calc(51.1% + var(--circle-radius)),
+                rgb(18, 18, 18) calc(55.6% + var(--circle-radius))
+            );
+            pointer-events: none;
+            background-size: 100%;
+            transition: background-size 200ms ease-out;
+            z-index: 0;
+        }
+
+        &:hover::after {
+            background-size: 200%;
+        }
+
+        &:nth-last-of-type(odd) {
+            --x: 30rem;
+            --y: 20rem;
+        }
+
+        &__tags,
+        &__lvl {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            gap: 1rem;
+        }
+
+        &__question {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__front {
+    }
+
+    &__back {
+        display: none;
+    }
+}

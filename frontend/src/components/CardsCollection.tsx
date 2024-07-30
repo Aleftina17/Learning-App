@@ -1,4 +1,4 @@
-import Card from "./Card";
+import CardThumb from "./CardThumb";
 
 const CardsCollection = () => {
     return (
@@ -8,19 +8,14 @@ const CardsCollection = () => {
                 <div className="cards-collection__tags">
                     <span>React</span>
                     <span>JS</span>
-                    <span>HTML</span>
+                    <span>Redux</span>
                 </div>
                 <div className="cards-collection__items">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    <CardThumb />
+                    <CardThumb />
+                    <CardThumb />
+                    <CardThumb />
+                    <CardThumb />
                 </div>
             </div>
         </section>
