@@ -1,0 +1,28 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    &__title {
+        font-size: 10rem;
+        text-shadow: 0 0 5px #00aced, 0 0 10px #00aced, 0 0 20px #00aced, 0 0 40px #00aced, 0 0 80px #00aced;
+    }
+
+    &__desc {
+        font-size: 3rem;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+}

@@ -1,9 +1,16 @@
-import React from 'react'
+import { useUser } from "@clerk/clerk-react";
+import HeroSection from "../components/HeroSection";
+import CardsCollection from "../components/CardsCollection";
 
 const HomePage = () => {
-  return (
-    <div>HomePage</div>
-  )
-}
+    const { user } = useUser();
 
-export default HomePage
+    return (
+        <>
+            <HeroSection />
+            <CardsCollection />
+        </>
+    );
+};
+
+export default HomePage;
