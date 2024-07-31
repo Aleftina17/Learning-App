@@ -1,0 +1,22 @@
+.select{  
+    &__top{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border: 0.1rem solid #ffffff81;
+        height: 4rem;
+        border-radius: 0.4rem;
+        padding: 0 1rem;
+        box-shadow: 0.2rem 0.4rem 1rem -0.2rem rgba(0, 132, 255, 0.3), -0.2rem -0.4rem 1rem -0.2rem rgba(131, 190, 189, 0.3);
+
+        span{
+            font-size: 1.6rem;
+        }
+    
+    }
+
+    &__dropdown{
+        display: none;
+    }
+}

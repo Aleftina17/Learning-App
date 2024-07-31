@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SlHome, SlLogin, SlGrid, SlBulb } from "react-icons/sl";
+import { SlHome, SlLogin, SlGrid, SlBulb, SlLayers } from "react-icons/sl";
 import { BsChevronDoubleRight } from "react-icons/bs";
 
 const Sidebar: React.FC = () => {
@@ -28,8 +28,14 @@ const Sidebar: React.FC = () => {
                     </li>
                     <li>
                         <a href="#">
+                            <SlLayers />
+                            <span>All Cards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                             <SlBulb />
-                            <span>Create card</span>
+                            <span>Create Card</span>
                         </a>
                     </li>
                     <li>

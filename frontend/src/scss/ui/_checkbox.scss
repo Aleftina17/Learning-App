@@ -1,0 +1,19 @@
+.checkbox-field{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .checkbox{
+        width: 2rem;
+        height: 2rem;
+        border: 0.1rem solid #ffffff81;
+
+        input{
+            display: none;
+        }
+    }
+
+    span{
+        font-size: 1.8rem;
+    }
+}

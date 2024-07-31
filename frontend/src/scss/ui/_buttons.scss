@@ -2,6 +2,8 @@
     padding: 1.4rem 2.4rem;
     white-space: nowrap;
     letter-spacing: 0.1rem;
+    width: fit-content;
+    height: fit-content;
 
     &--primary {
         position: relative;
@@ -119,7 +121,7 @@
         &:hover {
             background: #00aced;
             color: #fff;
-            box-shadow: 0 0 0.5rem #00aced, 0 0 2.5rem #00aced, 0 0 5rem #00aced, 0 0 20rem #00aced;
+            box-shadow: 0 0 0.5rem #00aeedb1, 0 0 2.5rem #00aeed9b, 0 0 5rem #00aeed9f, 0 0 20rem #00aeeda9;
             // -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
         }
         span {
@@ -197,5 +199,17 @@
                 bottom: 100%;
             }
         }
+    }
+
+    &--search{
+        border: 0.1rem solid #ffffff81;
+        padding: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.4rem;
+        box-shadow: 0.2rem 0.4rem 1rem -0.2rem rgba(0, 132, 255, 0.3), -0.2rem -0.4rem 1rem -0.2rem rgba(131, 190, 189, 0.3);
     }
 }

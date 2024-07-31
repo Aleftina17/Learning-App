@@ -2,14 +2,16 @@ import { useUser } from "@clerk/clerk-react";
 import HeroSection from "../components/HeroSection";
 import CardsCollection from "../components/CardsCollection";
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
     const { user } = useUser();
 
     return (
-        <>
-            <HeroSection />
-            <CardsCollection />
-        </>
+        <div className="home">
+            <div className="container">
+                <HeroSection />
+                <CardsCollection />
+            </div>
+        </div>
     );
 };
 

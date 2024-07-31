@@ -1,0 +1,35 @@
+.dashboard{
+    padding-top: 6rem;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    &__collections, &__all{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        gap: 4rem;
+
+        &-items{
+            grid-area: auto / span 2;
+        }
+
+        .btn--active{
+            justify-self: end;
+        }
+    }
+
+    &__title{
+        font-size: 6rem;
+    }
+
+    &__all-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+}

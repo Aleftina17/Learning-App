@@ -1,10 +1,13 @@
-import CardsCollection from "./CardsCollection";
-import CardThumb from "./CardThumb";
+import CollectionsSearch from "../components/CollectionsSearch";
+import CardsCollection from "./../components/CardsCollection";
+import CardThumb from "./../components/CardThumb";
 
-const Dashboard = () => {
+const DashboardPage: React.FC = () => {
     return (
         <div className="dashboard">
             <div className="container">
+                <CollectionsSearch />
+
                 <div className="dashboard__collections">
                     <div className="dashboard__title">Cards Collections</div>
 
@@ -24,7 +27,7 @@ const Dashboard = () => {
                 </div>
 
                 <div className="dashboard__all">
-                    <div className="dashboard__title">Cards Collections</div>
+                    <div className="dashboard__title">All Cards</div>
                     <button className="btn btn--active">
                         <span></span>
                         <span></span>
@@ -43,4 +46,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default DashboardPage;

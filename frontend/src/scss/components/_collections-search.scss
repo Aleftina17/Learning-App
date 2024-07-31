@@ -1,0 +1,15 @@
+.search{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    input{
+        flex: 1;
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5058823529);
+        padding-bottom: 1.4rem;
+
+        &::-webkit-search-cancel-button{
+            display: none;
+        }
+    }
+}

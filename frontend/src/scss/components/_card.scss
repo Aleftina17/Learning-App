@@ -2,7 +2,14 @@
     &-thumb {
         position: relative;
         width: 100%;
-        background-color: #2d2d2d;
+        background-color: transparent;
+        box-shadow: .2rem .4rem 1.0rem -.2rem rgba(0, 132, 255, 0.3),
+          -.2rem -.4rem 1.0rem -.2rem rgba(131, 190, 189, 0.3);
+        background: linear-gradient(
+          150deg,
+          rgba(56, 217, 235, 0.312) 0%,
+          rgba(0, 132, 255, 0.452) 100%
+        );
         padding: 2rem;
         font-size: 1.6rem;
         display: flex;
@@ -51,7 +58,7 @@
             background-size: 200%;
         }
 
-        &:nth-last-of-type(odd) {
+        &:nth-of-type(odd) {
             --x: 30rem;
             --y: 20rem;
         }

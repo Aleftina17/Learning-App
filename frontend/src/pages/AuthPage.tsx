@@ -1,6 +1,6 @@
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
 
-const AuthPage = () => {
+const AuthPage: React.FC = () => {
     return <div className="sign-in-container">
         <SignedOut>
             <SignUpButton mode="modal"/>
