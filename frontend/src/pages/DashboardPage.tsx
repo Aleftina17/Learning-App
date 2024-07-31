@@ -11,7 +11,7 @@ const DashboardPage: React.FC = () => {
                 <div className="dashboard__collections">
                     <div className="dashboard__title">Cards Collections</div>
 
-                    <button className="btn btn--active">
+                    <button className="btn btn--moving">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -28,7 +28,7 @@ const DashboardPage: React.FC = () => {
 
                 <div className="dashboard__all">
                     <div className="dashboard__title">All Cards</div>
-                    <button className="btn btn--active">
+                    <button className="btn btn--moving">
                         <span></span>
                         <span></span>
                         <span></span>

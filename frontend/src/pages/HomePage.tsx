@@ -1,6 +1,7 @@
 import { useUser } from "@clerk/clerk-react";
 import HeroSection from "../components/HeroSection";
 import CardsCollection from "../components/CardsCollection";
+import Card from "../components/Card";
 
 const HomePage: React.FC = () => {
     const { user } = useUser();
@@ -11,6 +12,7 @@ const HomePage: React.FC = () => {
                 <HeroSection />
                 <CardsCollection />
             </div>
+            <Card />
         </div>
     );
 };

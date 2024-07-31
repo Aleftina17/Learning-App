@@ -4,11 +4,11 @@ const CollectionsSearch: React.FC = () => {
     return (
         <div className="search">
             <input type="search" placeholder="Enter collections title..." />
-            <button className="btn btn--search">
+            <button className="btn btn--search btn--double-bord">
                 <SlMagnifier />
             </button>
             <div className="select">
-                <div className="select__top">
+                <div className="select__top btn--double-bord">
                     <span>Select Categories</span>
                     <svg width="10" height="6" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 8L0.937822 0.5L13.0622 0.5L7 8Z" stroke="#fff" />

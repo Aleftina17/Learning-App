@@ -3,11 +3,11 @@ import CardThumb from "./CardThumb";
 const CardsCollection: React.FC = () => {
     return (
         <section className="cards-collection">
-            <h4 className="cards-collection__title">Cards Collection #1</h4>
+            <a href='#!' className="cards-collection__title">Cards Collection #1</a>
             <div className="cards-collection__tags">
-                <span>React</span>
-                <span>JS</span>
-                <span>Redux</span>
+                <span className="tag">React</span>
+                <span className="tag">JS</span>
+                <span className="tag">Redux</span>
             </div>
             <div className="cards-collection__items">
                 <CardThumb />

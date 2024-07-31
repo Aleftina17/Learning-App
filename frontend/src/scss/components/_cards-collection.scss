@@ -4,21 +4,22 @@
         margin-top: 8rem;
     }
     &__title{
+        display: block;
+        width: fit-content;
         font-size: 3.6rem;
         margin-bottom: 2rem;
+        transition: text-shadow .2s;
+
+        &:hover{
+            -webkit-animation: neon .1s ease-in-out infinite alternate;
+                  animation: neon .1s ease-in-out infinite alternate;
+        }
     }
 
     &__tags{
         margin-bottom: 4rem;
         display: flex;
         gap: 1rem;
-
-        span{
-            display: block;
-            padding: 0.6rem 1.6rem;
-            border: 0.1rem solid #fff;
-            font-size: 1.8rem;
-        }
     }
 
     &__items{
@@ -26,4 +27,22 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
     }
+}
+
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 .6rem rgba(202, 228, 225, 0.92), 0 0 3.0rem rgba(202, 228, 225, 0.34), 0 0 1.2rem rgba(30, 132, 242, 0.52), 0 0 2.1rem rgba(30, 132, 242, 0.92), 0 0 3.4rem rgba(30, 132, 242, 0.78), 0 0 5.4rem rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 .6rem rgba(202, 228, 225, 0.98), 0 0 3.0rem rgba(202, 228, 225, 0.42), 0 0 1.2rem rgba(30, 132, 242, 0.58), 0 0 2.2rem rgba(30, 132, 242, 0.84), 0 0 3.8rem rgba(30, 132, 242, 0.88), 0 0 6.0rem #1e84f2;
+  }
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 .6rem rgba(202, 228, 225, 0.92), 0 0 3.0rem rgba(202, 228, 225, 0.34), 0 0 1.2rem rgba(30, 132, 242, 0.52), 0 0 2.1rem rgba(30, 132, 242, 0.92), 0 0 3.4rem rgba(30, 132, 242, 0.78), 0 0 5.4rem rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 .6rem rgba(202, 228, 225, 0.98), 0 0 3.0rem rgba(202, 228, 225, 0.42), 0 0 1.2rem rgba(30, 132, 242, 0.58), 0 0 2.2rem rgba(30, 132, 242, 0.84), 0 0 3.8rem rgba(30, 132, 242, 0.88), 0 0 6.0rem #1e84f2;
+  }
 }
