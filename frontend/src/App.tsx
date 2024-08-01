@@ -1,4 +1,5 @@
 import Sidebar from './components/Sidebar'
+import AllCardsPage from './pages/AllCardsPage'
 import AuthPage from './pages/AuthPage'
 import CreatePage from './pages/CreatePage'
 import DashboardPage from './pages/DashboardPage'
@@ -15,6 +16,7 @@ function App() {
           <Route path='/auth' element={<AuthPage />}></Route>
           <Route path='/dashboard' element={<DashboardPage />}></Route>
           <Route path='/create' element={<CreatePage />}></Route>
+          <Route path='/all' element={<AllCardsPage />}></Route>
         </Routes>
       </div>
    </Router>

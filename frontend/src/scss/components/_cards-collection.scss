@@ -1,8 +1,9 @@
 .cards-collection{
+  margin-bottom: 6rem;
 
-    & + &{
-        margin-top: 8rem;
-    }
+    // & + &{
+    //     margin-top: 8rem;
+    // }
     &__title{
         display: block;
         width: fit-content;

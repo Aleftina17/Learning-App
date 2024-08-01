@@ -1,5 +1,6 @@
 .dashboard{
     padding-top: 6rem;
+    padding-bottom: 6rem;
 
     .container{
         display: flex;
@@ -17,7 +18,7 @@
             grid-area: auto / span 2;
         }
 
-        .btn--moving{
+        .btn--moving, .select{
             justify-self: end;
         }
     }

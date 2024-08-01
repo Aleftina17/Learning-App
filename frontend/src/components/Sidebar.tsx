@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SlHome, SlLogin, SlGrid, SlBulb, SlLayers } from "react-icons/sl";
 import { BsChevronDoubleRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { SignedIn, SignedOut, SignUpButton, UserButton, useUser } from "@clerk/clerk-react";
 
 const Sidebar: React.FC = () => {
@@ -18,28 +18,28 @@ const Sidebar: React.FC = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/" className="active">
+                        <NavLink to="/">
                             <SlHome />
                             <span>Home</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/dashboard">
+                        <NavLink to="/dashboard">
                             <SlGrid />
                             <span>Dashboard</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/all">
+                        <NavLink to="/all">
                             <SlLayers />
                             <span>All Cards</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/create">
+                        <NavLink to="/create">
                             <SlBulb />
                             <span>Create Card</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
                         <SignedOut>

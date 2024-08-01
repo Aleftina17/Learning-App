@@ -1,6 +1,5 @@
 import CollectionsSearch from "../components/CollectionsSearch";
 import CardsCollection from "./../components/CardsCollection";
-import CardThumb from "./../components/CardThumb";
 
 const DashboardPage: React.FC = () => {
     return (
@@ -23,22 +22,6 @@ const DashboardPage: React.FC = () => {
                         <CardsCollection />
                         <CardsCollection />
                         <CardsCollection />
-                    </div>
-                </div>
-
-                <div className="dashboard__all">
-                    <div className="dashboard__title">All Cards</div>
-                    <button className="btn btn--moving">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Add New Card
-                    </button>
-                    <div className="dashboard__all-items">
-                        <CardThumb />
-                        <CardThumb />
-                        <CardThumb />
                     </div>
                 </div>
             </div>
