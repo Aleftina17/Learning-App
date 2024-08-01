@@ -31,7 +31,11 @@ aside {
             gap: 1rem;
         }
 
-        li:last-child {
+        // li:last-child {
+        //     margin-top: auto;
+        // }
+
+        li.user-item{
             margin-top: auto;
         }
 
@@ -67,5 +71,24 @@ aside {
                 background-color: #fff;
             }
         }
+
+        label{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+        }
+
+        .cl-userButton-root{
+            .cl-internal-1j7ahlv {
+                width: 2rem;
+                height: 2rem;
+            }
+            span{
+                opacity: 1;
+                visibility: visible;
+                
+            }
+        } 
     }
 }

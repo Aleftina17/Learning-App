@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { SlHome, SlLogin, SlGrid, SlBulb, SlLayers } from "react-icons/sl";
 import { BsChevronDoubleRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { SignedIn, SignedOut, SignUpButton, UserButton, useUser } from "@clerk/clerk-react";
 
 const Sidebar: React.FC = () => {
     const [isExpanded, setIsExpanded] = useState(false);
+    const { user } = useUser();
 
     const handleSidebarToggle = (e: React.MouseEvent) => {
         e.preventDefault();
@@ -15,34 +18,51 @@ const Sidebar: React.FC = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href="#" className="active">
+                        <Link to="/" className="active">
                             <SlHome />
                             <span>Home</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link to="/dashboard">
                             <SlGrid />
                             <span>Dashboard</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link to="/all">
                             <SlLayers />
                             <span>All Cards</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link to="/create">
                             <SlBulb />
                             <span>Create Card</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
-                            <SlLogin />
-                            <span>Login</span>
-                        </a>
+                        <SignedOut>
+                            <SignUpButton>
+                                <a href="#!">
+                                    <SlLogin />
+                                    <span>Sign Up</span>
+                                </a>
+                            </SignUpButton>
+                        </SignedOut>
+                        
+                    </li>
+                    <li className="user-item">
+                        
+                    <SignedIn>
+                            <a href="#!">
+                                <label>
+                                <UserButton />
+                                <span>{user?.firstName}</span>
+                                </label>
+                            </a>
+                        </SignedIn>
+                        
                     </li>
                     <li>
                         <a href="#!" data-resize-btn onClick={handleSidebarToggle}>
