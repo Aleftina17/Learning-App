@@ -1,5 +1,5 @@
-.select{  
-    &__top{
+.select {
+    &__top {
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -9,13 +9,12 @@
         padding: 0 1rem;
         width: fit-content;
 
-        span{
+        span {
             font-size: 1.6rem;
         }
-    
     }
 
-    &__dropdown{
+    &__dropdown {
         display: none;
     }
 }

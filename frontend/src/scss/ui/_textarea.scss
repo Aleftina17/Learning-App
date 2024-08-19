@@ -1,0 +1,15 @@
+textarea {
+    resize: none;
+    padding: 1rem;
+    box-shadow: 0.2rem 0.4rem 1rem -0.2rem rgba(0, 132, 255, 0.3), -0.2rem -0.4rem 1rem -0.2rem rgba(131, 190, 189, 0.3);
+    height: 30rem;
+    background-color: rgb(18, 18, 18);
+
+    &::-webkit-scrollbar {
+        width: 0.4rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(41, 95, 128, 0.511);
+    }
+}
