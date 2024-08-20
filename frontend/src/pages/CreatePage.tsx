@@ -17,57 +17,32 @@ const CreatePage: React.FC = () => {
 
                                 <div className="input-grid">
                                     <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
+                                        <input type="checkbox" />
+                                        <div className="checkmark"></div>
                                         <span>React</span>
                                     </label>
+
                                     <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
+                                        <input type="checkbox" />
+                                        <div className="checkmark"></div>
                                         <span>Redux</span>
                                     </label>
+
                                     <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
-                                        <span>JavaScript</span>
+                                        <input type="checkbox" />
+                                        <div className="checkmark"></div>
+                                        <span>JS</span>
                                     </label>
+
                                     <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
-                                        <span>HTML</span>
+                                        <input type="checkbox" />
+                                        <div className="checkmark"></div>
+                                        <span>React</span>
                                     </label>
+
                                     <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
-                                        <span>CSS</span>
-                                    </label>
-                                    <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
-                                        <span>TypeScript</span>
-                                    </label>
-                                    <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
-                                        <span>Git</span>
-                                    </label>
-                                    <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
-                                        <span>Git</span>
-                                    </label>
-                                    <label className="checkbox-field">
-                                        <div className="checkbox">
-                                            <input type="checkbox" />
-                                        </div>
+                                        <input type="checkbox" />
+                                        <div className="checkmark"></div>
                                         <span>Web</span>
                                     </label>
                                 </div>
@@ -75,27 +50,23 @@ const CreatePage: React.FC = () => {
                             <div className="input-wrapper">
                                 <span className="input-title">Difficulty level:</span>
                                 <label className="checkbox-field">
-                                    <div className="checkbox">
-                                        <input type="checkbox" />
-                                    </div>
+                                    <input type="checkbox" />
+                                    <div className="checkmark"></div>
                                     <span>Easy</span>
                                 </label>
                                 <label className="checkbox-field">
-                                    <div className="checkbox">
-                                        <input type="checkbox" />
-                                    </div>
+                                    <input type="checkbox" />
+                                    <div className="checkmark"></div>
                                     <span>Medium</span>
                                 </label>
                                 <label className="checkbox-field">
-                                    <div className="checkbox">
-                                        <input type="checkbox" />
-                                    </div>
+                                    <input type="checkbox" />
+                                    <div className="checkmark"></div>
                                     <span>Hard</span>
                                 </label>
                                 <label className="checkbox-field">
-                                    <div className="checkbox">
-                                        <input type="checkbox" />
-                                    </div>
+                                    <input type="checkbox" />
+                                    <div className="checkmark"></div>
                                     <span>Very Hard</span>
                                 </label>
                             </div>
@@ -112,7 +83,7 @@ const CreatePage: React.FC = () => {
                         </div>
                     </div>
 
-                    <button className="btn btn--double-bord">Save Card</button>
+                    <button className="btn btn--save">Save Card</button>
                 </form>
             </div>
         </div>

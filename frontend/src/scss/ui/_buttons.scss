@@ -201,7 +201,8 @@
         }
     }
 
-    &--search, &--close {
+    &--search,
+    &--close {
         border: 0.1rem solid #ffffff81;
         padding: unset;
         display: flex;
@@ -211,13 +212,13 @@
         height: 4rem;
     }
 
-    &--double-bord{
+    &--double-bord {
         position: relative;
-        box-shadow: 0.2rem 0.4rem 1rem -0.2rem rgba(0, 132, 255, 0.3), -0.2rem -0.4rem 1rem -0.2rem rgba(131, 190, 189, 0.3);
+        box-shadow: $box-shadow-gradient;
         border-radius: 0.4rem;
 
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             border-radius: 0.4rem;
             width: 100%;
@@ -225,9 +226,9 @@
             top: 0;
             left: 0;
             transition: all 200ms ease-in-out;
-          }
+        }
 
-        &:hover{
+        &:hover {
             &::before {
                 top: -0.8rem;
                 left: -0.8rem;
@@ -235,11 +236,11 @@
                 height: calc(100% + 1.6rem);
                 border: 0.1rem solid #f3eaff;
                 box-shadow: 0 0 0.5rem 0.08rem #00aced, 0 0 0.5rem 0.08rem #00aced inset;
-              }
+            }
         }
     }
 
-    &--turn{
+    &--turn {
         margin-top: auto;
         align-self: center;
         display: flex;
@@ -247,9 +248,51 @@
         justify-content: center;
         gap: 1rem;
 
-        svg{
+        svg {
             width: 2.6rem;
             height: 3rem;
+        }
+    }
+
+    &--save {
+        color: $color-accent;
+        border: 0.1rem solid $color-accent;
+        font-size: 2rem;
+        position: relative;
+        transition: color 0.3s, background-color 0.3s;
+
+        &:hover {
+            color: #fff;
+            background-color: $color-accent;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            border-style: solid;
+            border-color: $color-accent;
+            transition: width 0.3s, height 0.3s, border-color 0.3s, box-shadow 0.5s;
+        }
+        &::before {
+            top: -1rem;
+            left: -1rem;
+            border-width: 0.1rem 0 0 0.1rem;
+        }
+        &::after {
+            bottom: -1rem;
+            right: -1rem;
+            border-width: 0px 0.1rem 0.1rem 0px;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            width: calc(100% + 2rem);
+            height: calc(100% + 2rem);
+            border-color: $color-accent;
+            box-shadow: $box-shadow-gradient;
         }
     }
 }

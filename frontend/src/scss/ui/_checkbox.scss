@@ -1,19 +1,45 @@
-.checkbox-field{
+.checkbox-field {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
 
-    .checkbox{
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 2rem;
         height: 2rem;
-        border: 0.1rem solid #ffffff81;
+        position: relative;
+        border: 0.1rem solid #f3eaff;
+        box-shadow: 0 0 0.5rem 0.08rem #00aced;
 
-        input{
-            display: none;
+        &::after {
+            content: "";
+            position: absolute;
+            opacity: 0;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%) rotate(45deg) scale(0);
+            width: 0.6rem;
+            height: 1.2rem;
+            border: 0.1rem solid #f3eaff;
+            border-width: 0 0.2rem 0.2rem 0;
+            transition: transform 0.2s, opacity 0.2s;
         }
     }
 
-    span{
-        font-size: 1.8rem;
+    input:checked ~ .checkmark:after {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
     }
 }

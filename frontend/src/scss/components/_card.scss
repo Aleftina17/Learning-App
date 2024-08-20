@@ -1,4 +1,5 @@
 .card {
+    cursor: pointer;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,10 +18,11 @@
     display: none;
 
     &-thumb {
+        cursor: pointer;
         position: relative;
         width: 100%;
         background-color: transparent;
-        box-shadow: 0.2rem 0.4rem 1rem -0.2rem rgba(0, 132, 255, 0.3), -0.2rem -0.4rem 1rem -0.2rem rgba(131, 190, 189, 0.3);
+        box-shadow: $box-shadow-gradient;
         background: linear-gradient(150deg, rgba(56, 217, 235, 0.312) 0%, rgba(0, 132, 255, 0.452) 100%);
         padding: 2rem;
         font-size: 1.6rem;
@@ -95,7 +97,7 @@
         width: 50vw;
         background-color: #1b1b1b;
         border-radius: 1rem;
-        box-shadow: 0.2rem 0.4rem 1rem -0.2rem rgba(0, 132, 255, 0.3), -0.2rem -0.4rem 1rem -0.2rem rgba(131, 190, 189, 0.3);
+        box-shadow: $box-shadow-gradient;
         position: relative;
         border: 0.1rem solid #ffffff24;
         display: flex;
